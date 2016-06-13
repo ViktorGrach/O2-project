@@ -1,0 +1,27 @@
+﻿@import "variables.less";
+@import "mixin.less";
+
+.checkbox label {
+  padding-left: @login_checkbox-label_padding-left;
+}
+
+.form-control {
+  background-color: @login_form-control_background-color;
+  background-image: none;
+  border: @login_form-control_border solid  @login_form-control_border-color;
+  .border-radius(1px);
+  width: 100%;
+  color: inherit;
+  display: block;
+  padding: @login_form-control_padding;
+  /*.transition(border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s);*/
+  font-size: 14px;
+  .box-shadow(none);
+  }
+
+.loginscreen {
+  width: 600px;
+  height: auto;
+  margin-top: @login_loginscreen_margin-top;
+  margin: @login_loginscreen_margin auto;
+}
