@@ -1,0 +1,22 @@
+﻿@import "variables.less";
+@import "mixin.less";
+
+table {
+  margin-bottom: 0 !important;
+}
+
+.table > thead > tr > th {
+  border-color: transparent;
+  text-transform: uppercase;
+}
+
+.table-hover > tbody > tr:hover {
+  background-color: @table-hover_color !important;
+  .transition (0.3s);
+  cursor: default !important;
+}
+
+.table-hover > thead > tr:hover {
+  background-color: transparent !important;
+}
+

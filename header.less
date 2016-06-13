@@ -1,0 +1,60 @@
+﻿@import "variables.less";
+@import "mixin.less";
+
+#header {
+    background-color: @header_background-color;
+    display: block;
+    margin: @header_margin;
+    padding: @header_padding;
+    position: relative;
+    border-bottom: solid @header_border-bottom;
+}
+
+.header_background {
+        background: @header_background;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, @header_background_gradient);
+        /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #13163b), color-stop(50%, #2b4c83), color-stop(100%, #71a2d0));
+        /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, @header_background_gradient);
+        /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, @header_background_gradient);
+        /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, @header_background_gradient);
+        /* IE10+ */
+        background: linear-gradient(to bottom, @header_background_gradient);
+    }
+
+.header-navigation a {
+  color: !important;
+  &:hover {
+      color: !important;
+  }
+}
+
+.header-navigation > li {
+  > a:hover, > a:focus {
+    text-decoration: none;
+    background-color: transparent !important;
+  }
+}
+
+
+.navbar {
+    .border-radius(0px);
+    margin-bottom: @header_navbar_margin-bottom;
+    min-height: 62px;
+}
+
+.navbar-brand {
+    height: 62px;
+    line-height: 30px;
+    padding: @header_navbar-brand_padding;
+}
+
+.o2-logo_blue svg path {
+    fill: @header_o2-logo_fill !important;
+}
+
+
